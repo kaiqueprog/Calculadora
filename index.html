@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body >
+
+ <div class="container">
+    <div class="row">
+    <div class="col d-flex justify-content-center"><br/>
+        <div class="calculadora">
+            <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            
+        <div class="row">
+            <a onclick="calcular('acao','c')" type="button" class="btn btn-dark clear">C</a>
+            <a onclick="calcular('acao','/')" type="button" class="btn btn-dark">/</a>
+            <a onclick="calcular('acao','*')" type="button" class="btn btn-dark">x</a>
+        </div>
+
+        <div class="row">
+            <a onclick="calcular('valor', 7)" type="button" class="btn btn-dark">7</a>
+            <a onclick="calcular('valor', 8)" type="button" class="btn btn-dark">8</a>
+            <a onclick="calcular('valor', 9)" type="button" class="btn btn-dark">9</a>
+            <a onclick="calcular('acao','-')" type="button" class="btn btn-dark">-</a>
+        </div>
+            
+        <div class="row">
+            <a onclick="calcular('valor', 4)" type="button" class="btn btn-dark">4</a>
+            <a onclick="calcular('valor', 5)" type="button" class="btn btn-dark">5</a>
+            <a onclick="calcular('valor', 6)" type="button" class="btn btn-dark">6</a>
+            <a onclick="calcular('acao','+')" type="button" class="btn btn-dark">+</a>
+        </div>
+
+        <div class="row">
+            <a onclick="calcular('valor', 1)" type="button" class="btn btn-dark">1</a>
+            <a onclick="calcular('valor', 2)" type="button" class="btn btn-dark">2</a>
+            <a onclick="calcular('valor', 3)" type="button" class="btn btn-dark">3</a>
+            <a onclick="calcular('acao','=')" type="button" class="btn btn-dark enter">=</a>
+        </div>
+
+        <div class="row" style="margin-top: -60px">
+            <a onclick="calcular('valor', 0)" type="button" class="btn btn-dark zero">0</a>
+            <a onclick="calcular('acao', '.')" type="button" class="btn btn-dark">.</a>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>   
+  </body>   
+</html>
